@@ -1,0 +1,18 @@
+digraph G {
+	node [shape = record];
+	node1 [label = "<l> |{<v> value: 1| height: 0| bf: 0}|<r>"];
+	node4 [label = "<l> |{<v> value: 4| height: 0| bf: 0}|<r>"];
+	node2 [label = "<l> |{<v> value: 2| height: 1| bf: 0}|<r>"];
+	node6 [label = "<l> |{<v> value: 6| height: 0| bf: 0}|<r>"];
+	node9 [label = "<l> |{<v> value: 9| height: 0| bf: 0}|<r>"];
+	node8 [label = "<l> |{<v> value: 8| height: 1| bf: -1}|<r>"];
+	node7 [label = "<l> |{<v> value: 7| height: 2| bf: -1}|<r>"];
+	node5 [label = "<l> |{<v> value: 5| height: 3| bf: -1}|<r>"];
+	node5:l -> node2;
+	node2:l -> node1;
+	node2:r -> node4;
+	node5:r -> node7;
+	node7:l -> node6;
+	node7:r -> node8;
+	node8:r -> node9;
+}
