@@ -1,0 +1,30 @@
+digraph G {
+	node [shape = record];
+	node0x90a6008 [label = "<c>|{key: a| value: 0}|<b>"];
+	node0x90a6028 [label = "<c>|{key: b| value: 0}|<b>"];
+	node0x90a6048 [label = "<c>|{key: c| value: 1}|<b>"];
+	node0x90a60e8 [label = "<c>|{key: d| value: 1}|<b>"];
+	node0x90a6048:c -> node0x90a60e8;
+	node0x90a6088 [label = "<c>|{key: d| value: 1}|<b>"];
+	node0x90a6048:b -> node0x90a6088;
+	node0x90a6028:c -> node0x90a6048;
+	node0x90a6008:c -> node0x90a6028;
+	node0x90a6068 [label = "<c>|{key: b| value: 1}|<b>"];
+	node0x90a60a8 [label = "<c>|{key: c| value: 0}|<b>"];
+	node0x90a60c8 [label = "<c>|{key: d| value: 1}|<b>"];
+	node0x90a60a8:c -> node0x90a60c8;
+	node0x90a6068:c -> node0x90a60a8;
+	node0x90a6108 [label = "<c>|{key: e| value: 0}|<b>"];
+	node0x90a6128 [label = "<c>|{key: f| value: 0}|<b>"];
+	node0x90a6148 [label = "<c>|{key: g| value: 1}|<b>"];
+	node0x90a6128:c -> node0x90a6148;
+	node0x90a6108:c -> node0x90a6128;
+	node0x90a6168 [label = "<c>|{key: h| value: 0}|<b>"];
+	node0x90a6188 [label = "<c>|{key: i| value: 0}|<b>"];
+	node0x90a61a8 [label = "<c>|{key: i| value: 1}|<b>"];
+	node0x90a6188:c -> node0x90a61a8;
+	node0x90a6168:c -> node0x90a6188;
+	node0x90a6108:b -> node0x90a6168;
+	node0x90a6068:b -> node0x90a6108;
+	node0x90a6008:b -> node0x90a6068;
+}
