@@ -83,6 +83,9 @@ int is_queue_empty(Queue queue)
 }
 
 TreeNode dfs_search_tree_aux(char target, int depth, int *nd, Queue queue, int current_count, int next_count)
+/* Actually, I'd like to write in the old C code fashion... */
+/* The parameter `current_count' and `next_count' indicates the number of nodes
+   rest at the same depth and at next depth. */
 {
     TreeNode node;
 
